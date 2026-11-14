@@ -19,19 +19,28 @@ Legal text has a natural structure (articles), answers can be checked against a 
 
 ## Results
 
-`TODO: fill in after running the evaluation.`
+Article-level retrieval on 57 hand-written questions (an answer counts as correct if any gold article is retrieved):
 
 | Retriever | hit@1 | hit@3 | hit@5 | hit@10 | MRR |
 |---|---|---|---|---|---|
-| BM25 | | | | | |
-| Dense (e5-base) | | | | | |
-| Dense (bge-m3) | | | | | |
-| Hybrid (BM25 + e5-base) | | | | | |
-| Hybrid (BM25 + bge-m3) | | | | | |
+| BM25 | 0.596 | 0.719 | 0.807 | 0.912 | 0.692 |
+| Dense (e5-base) | 0.526 | 0.825 | 0.877 | 0.930 | 0.679 |
+| **Dense (bge-m3)** | **0.860** | **0.930** | **0.982** | **1.000** | **0.906** |
+| Hybrid (BM25 + e5-base) | 0.579 | 0.842 | 0.895 | 0.982 | 0.722 |
+| Hybrid (BM25 + bge-m3) | 0.667 | 0.860 | 0.930 | 1.000 | 0.777 |
 
-Generation (`TODO: model, k`): gold article in context `TODO`% · cites correct article `TODO`% · valid citations `TODO`% · abstentions `TODO`%.
+**Takeaways**
 
-**Error analysis:** `TODO: 2-3 typical failure patterns, e.g. questions that mix two laws, or paraphrases with no lexical overlap.`
+- Dense bge-m3 alone is the best retriever on every metric. It puts a correct article first for 86% of questions and in the top 10 for all of them.
+- The hybrids were worse than bge-m3 alone. With equal-weight Reciprocal Rank Fusion, the weaker BM25 and e5 rankings pulled the result down. I did not tune the fusion weights, so this says "untuned RRF did not help here", not that hybrid retrieval cannot help.
+- The demo therefore uses bge-m3 only.
+
+**Error analysis** (from `results/retrieval_failures.csv`, which lists every question whose gold article is not in the top 5)
+
+- BM25 misses paraphrases with little word overlap, for example "Quando o tratamento de dados pessoais deve ser encerrado?" (gold LGPD Art. 15, which talks about "término") or "Em que casos os dados pessoais podem ser conservados depois do fim do tratamento?" (LGPD Art. 16). Neither gold article appears in its top 10.
+- Definition-style questions with two gold articles are hard for BM25 and for both hybrids, for example "Quem é considerado consumidor e quem é considerado fornecedor?" (CDC Art. 2 and 3): none of them has a gold article in the top 5, while bge-m3 alone does.
+- The only bge-m3 miss in the top 5 is "Quais penalidades se aplicam a quem descumpre as regras de guarda de registros?" (gold MCI Art. 12): it ranks the gold article 8th, behind neighboring articles of the same law and two unrelated CDC articles (top 3: MCI-13, CDC-73, CDC-72).
+- Generation has not been evaluated yet (`src/eval_generation.py`).
 
 ## Run it
 
@@ -58,7 +67,9 @@ Or open `run_colab.ipynb` in Google Colab (upload the repository as a zip).
 
 ## Demo
 
-🤗 Space: `TODO` (`app.py`; set the `HF_TOKEN` secret and optionally `LLM_ID`)
+🤗 Space (retrieval only, bge-m3): https://huggingface.co/spaces/larissaac/legal-rag-pt
+
+The Space shows the retrieval step. Cited generation is in this repository (`src/generate.py`, `src/eval_generation.py`) and needs a model: a local one through `transformers`, or an inference API.
 
 ## My contribution
 
