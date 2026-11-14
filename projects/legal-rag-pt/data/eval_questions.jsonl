@@ -1,0 +1,20 @@
+{"id": "q01", "question": "Quais são os direitos do titular dos dados pessoais perante o controlador?", "gold": ["LGPD-18"]}
+{"id": "q02", "question": "Em quais hipóteses a lei permite o tratamento de dados pessoais?", "gold": ["LGPD-7"]}
+{"id": "q03", "question": "O que é o encarregado pelo tratamento de dados pessoais e quais são suas atribuições?", "gold": ["LGPD-41"]}
+{"id": "q04", "question": "O controlador precisa comunicar um incidente de segurança que possa causar dano aos titulares?", "gold": ["LGPD-48"]}
+{"id": "q05", "question": "Quais sanções administrativas a autoridade nacional pode aplicar por infração à lei de proteção de dados?", "gold": ["LGPD-52"]}
+{"id": "q06", "question": "Como deve ser feito o tratamento de dados pessoais sensíveis?", "gold": ["LGPD-11"]}
+{"id": "q07", "question": "Quais são as regras para o tratamento de dados pessoais de crianças e adolescentes?", "gold": ["LGPD-14"]}
+{"id": "q08", "question": "Em que casos é permitida a transferência internacional de dados pessoais?", "gold": ["LGPD-33"]}
+{"id": "q09", "question": "Quais são os direitos assegurados aos usuários da internet?", "gold": ["MCI-7"]}
+{"id": "q10", "question": "Por quanto tempo o provedor de conexão deve guardar os registros de conexão?", "gold": ["MCI-13"]}
+{"id": "q11", "question": "Por quanto tempo o provedor de aplicações de internet deve manter os registros de acesso a aplicações?", "gold": ["MCI-15"]}
+{"id": "q12", "question": "O provedor de aplicações pode ser responsabilizado por conteúdo gerado por terceiros?", "gold": ["MCI-19"]}
+{"id": "q13", "question": "O que a lei diz sobre a neutralidade da rede?", "gold": ["MCI-9"]}
+{"id": "q14", "question": "Em quantos dias o consumidor pode desistir de uma compra feita fora do estabelecimento comercial?", "gold": ["CDC-49"]}
+{"id": "q15", "question": "O que o fornecedor deve fazer quando o produto apresenta vício de qualidade?", "gold": ["CDC-18"]}
+{"id": "q16", "question": "Quais são os direitos básicos do consumidor?", "gold": ["CDC-6"]}
+{"id": "q17", "question": "O consumidor cobrado indevidamente tem direito a receber o valor em dobro?", "gold": ["CDC-42"]}
+{"id": "q18", "question": "O fornecedor de serviços responde por defeitos na prestação do serviço mesmo sem culpa?", "gold": ["CDC-14"]}
+{"id": "q19", "question": "Quais práticas são consideradas abusivas contra o consumidor?", "gold": ["CDC-39"]}
+{"id": "q20", "question": "A publicidade e a oferta feitas pelo fornecedor o obrigam a cumprir o que anunciou?", "gold": ["CDC-30"]}
