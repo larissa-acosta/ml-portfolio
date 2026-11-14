@@ -47,11 +47,11 @@ Or open `run_colab.ipynb` in Google Colab (upload the repository as a zip).
 
 ## Evaluation set
 
-`data/eval_questions.jsonl` has 20 starter questions with the expected article (`gold`). **The gold articles are a first draft and must be checked against the law text**; the goal is to grow this set to 50-80 questions, including some that need more than one article.
+`data/eval_questions.jsonl` has 57 questions (LGPD, Marco Civil da Internet and CDC), each with the expected article (`gold`). The gold articles were checked against the downloaded law text (the article exists and contains the expected provision), but the legal reading behind each pair is the project authors' and has not been reviewed by a lawyer. A question counts as a hit when **any** of its gold articles is retrieved; questions that need several articles at once, or span two laws, are not covered yet.
 
 ## Limitations
 
-- Evaluation set is small and written by the project authors.
+- Evaluation set is small (57 questions) and written by the project authors.
 - Groundedness is measured by an embedding-similarity proxy plus citation checks; it is not a human judgment of legal correctness.
 - Laws change; the ingestion downloads the current compiled versions.
 - No handling of questions spanning several laws beyond what retrieval returns.

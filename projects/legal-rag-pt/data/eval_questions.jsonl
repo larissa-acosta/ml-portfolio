@@ -18,3 +18,40 @@
 {"id": "q18", "question": "O fornecedor de serviços responde por defeitos na prestação do serviço mesmo sem culpa?", "gold": ["CDC-14"]}
 {"id": "q19", "question": "Quais práticas são consideradas abusivas contra o consumidor?", "gold": ["CDC-39"]}
 {"id": "q20", "question": "A publicidade e a oferta feitas pelo fornecedor o obrigam a cumprir o que anunciou?", "gold": ["CDC-30"]}
+{"id": "q21", "question": "Qual é o conceito de dado pessoal e de dado pessoal sensível?", "gold": ["LGPD-5"]}
+{"id": "q22", "question": "Quais princípios devem ser observados nas atividades de tratamento de dados pessoais?", "gold": ["LGPD-6"]}
+{"id": "q23", "question": "Como o consentimento do titular deve ser fornecido para ser válido?", "gold": ["LGPD-8"]}
+{"id": "q24", "question": "Quando o tratamento de dados pessoais deve ser encerrado?", "gold": ["LGPD-15"]}
+{"id": "q25", "question": "Em que casos os dados pessoais podem ser conservados depois do fim do tratamento?", "gold": ["LGPD-16"]}
+{"id": "q26", "question": "O que é o relatório de impacto à proteção de dados pessoais e quando a autoridade pode pedi-lo?", "gold": ["LGPD-38"]}
+{"id": "q27", "question": "Quem responde pelos danos causados no tratamento de dados pessoais, o controlador ou o operador?", "gold": ["LGPD-42"]}
+{"id": "q28", "question": "Quais são as competências da Autoridade Nacional de Proteção de Dados?", "gold": ["LGPD-55J"]}
+{"id": "q29", "question": "Como o poder público pode tratar dados pessoais?", "gold": ["LGPD-23"]}
+{"id": "q30", "question": "O que a lei prevê sobre o tratamento de dados feito apenas para fins jornalísticos ou artísticos?", "gold": ["LGPD-4"]}
+{"id": "q31", "question": "O que é anonimização e quando um dado anonimizado passa a ser considerado dado pessoal?", "gold": ["LGPD-12"]}
+{"id": "q32", "question": "A lei de proteção de dados se aplica a um tratamento realizado fora do Brasil?", "gold": ["LGPD-3"]}
+{"id": "q33", "question": "Que medidas de segurança o controlador e o operador devem adotar para proteger os dados?", "gold": ["LGPD-46"]}
+{"id": "q34", "question": "Em que consiste o legítimo interesse como base para o tratamento de dados?", "gold": ["LGPD-10"]}
+{"id": "q35", "question": "O titular pode pedir a revisão de decisões tomadas apenas com base em tratamento automatizado?", "gold": ["LGPD-20"]}
+{"id": "q36", "question": "O titular pode pedir a confirmação de que seus dados estão sendo tratados? Em quanto tempo?", "gold": ["LGPD-19"]}
+{"id": "q37", "question": "Quais são os princípios da disciplina do uso da internet no Brasil?", "gold": ["MCI-3"]}
+{"id": "q38", "question": "Quais são os fundamentos do uso da internet no Brasil?", "gold": ["MCI-2"]}
+{"id": "q39", "question": "Quando o provedor deve retirar conteúdo com cenas de nudez divulgadas sem autorização?", "gold": ["MCI-21"]}
+{"id": "q40", "question": "O provedor de conexão responde por danos causados por conteúdo gerado por terceiros?", "gold": ["MCI-18"]}
+{"id": "q41", "question": "A lei brasileira se aplica a provedores de internet estrangeiros?", "gold": ["MCI-11"]}
+{"id": "q42", "question": "Quando os registros de conexão e de acesso podem ser fornecidos a quem os requisitar?", "gold": ["MCI-10"]}
+{"id": "q43", "question": "O que a lei considera conexão à internet e registro de conexão?", "gold": ["MCI-5"]}
+{"id": "q44", "question": "Quais penalidades se aplicam a quem descumpre as regras de guarda de registros?", "gold": ["MCI-12"]}
+{"id": "q45", "question": "Quem é considerado consumidor e quem é considerado fornecedor?", "gold": ["CDC-2", "CDC-3"]}
+{"id": "q46", "question": "Qual o prazo para o consumidor reclamar de vícios aparentes em produtos duráveis?", "gold": ["CDC-26"]}
+{"id": "q47", "question": "O fornecedor responde pelos danos causados por defeitos do produto, os chamados acidentes de consumo?", "gold": ["CDC-12"]}
+{"id": "q48", "question": "Quando uma cláusula contratual é considerada nula por abusividade?", "gold": ["CDC-51"]}
+{"id": "q49", "question": "Em quanto tempo prescreve a pretensão de reparação pelos danos causados por fato do produto ou do serviço?", "gold": ["CDC-27"]}
+{"id": "q50", "question": "O consumidor tem direito a receber orçamento prévio antes de um serviço?", "gold": ["CDC-40"]}
+{"id": "q51", "question": "A publicidade enganosa ou abusiva é proibida? O que caracteriza a publicidade enganosa?", "gold": ["CDC-37"]}
+{"id": "q52", "question": "O que o consumidor pode saber sobre os cadastros e bancos de dados que guardam informações sobre ele?", "gold": ["CDC-43"]}
+{"id": "q53", "question": "Qual a diferença entre a garantia legal e a garantia contratual?", "gold": ["CDC-50"]}
+{"id": "q54", "question": "Como devem ser redigidos os contratos de adesão?", "gold": ["CDC-54"]}
+{"id": "q55", "question": "Quando o juiz pode desconsiderar a personalidade jurídica da empresa?", "gold": ["CDC-28"]}
+{"id": "q56", "question": "Como devem ser as informações sobre produtos e serviços oferecidos ao consumidor?", "gold": ["CDC-31"]}
+{"id": "q57", "question": "Que informações o fornecedor deve dar prévia e adequadamente nos contratos de crédito e financiamento?", "gold": ["CDC-52"]}

@@ -58,8 +58,17 @@ def fetch_html(law_id: str, url: str, raw_dir: Path) -> bytes:
     return resp.content
 
 
+def decode_html(html: bytes) -> str:
+    """Planalto pages are not always UTF-8 (usually Windows-1252 / ISO-8859-1).
+    Guessing the encoding wrongly garbles accents, so decode explicitly."""
+    try:
+        return html.decode("utf-8")
+    except UnicodeDecodeError:
+        return html.decode("cp1252", errors="replace")
+
+
 def html_to_lines(html: bytes) -> list[str]:
-    soup = BeautifulSoup(html, "html.parser")
+    soup = BeautifulSoup(decode_html(html), "html.parser")
     for tag in soup(["script", "style"]):
         tag.decompose()
     # Planalto keeps superseded / revoked wording struck through: drop it, keep only the text in force

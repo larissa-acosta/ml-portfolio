@@ -32,7 +32,7 @@ All experiments were run in the **MOA graphical interface** (Classification tab)
 EvaluatePrequential -l meta.StreamingGradientBoostedTrees -s (ArffFileStream -f <path>/gassensor.arff)
 ```
 
-The same task was used for every algorithm, with accuracy, Kappa, CPU time and RAM-hours read from the evaluation panel. The exact MOA version and the raw result files were not kept.
+The same task was used for every algorithm, with accuracy, Kappa, CPU time and RAM-hours read from the evaluation panel.
 
 ## My contribution
 
@@ -40,5 +40,11 @@ I wrote the code and experiment scripts, curated the datasets, and wrote the fin
 
 ## Report
 
-<!-- TODO: add report.pdf (clean version, without advisor comments) only if the advisor and PUCPR allow it to be public. -->
-The final report is not published here.
+Presented orally at **SEMITI 2025** (15th Seminar of Initiation in Technological Development and Innovation, PUCPR, 20-23 October 2025). The abstract is published in the proceedings (PUCPRESS, 2026), p. 109, under *Exact and Earth Sciences, Oral Session*.
+
+- 📄 [Abstract in the official proceedings, p. 109 (PDF hosted by PUCPR)](https://semiti.pucpr.br/semiti/wp-content/uploads/sites/3/2026/06/semiti-2025.pdf#page=109)
+- 🏛️ [SEMITI previous editions (official site)](https://semiti.pucpr.br/semiti/edicoes-anteriores/)
+- 📎 [Excerpt kept in this repository: cover, catalog page, table of contents and abstract (4 pages)](semiti-2025-proof.pdf)
+- 🎥 [Recorded presentation](https://youtu.be/qGlMYKxmAXE)
+
+The full final report is not published here.
